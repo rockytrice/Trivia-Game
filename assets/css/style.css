@@ -1,0 +1,15 @@
+.jumbotron {
+    background-color: transparent;
+    height: 400px;
+    text-align: center;
+}
+body{
+    background-image: url("https://fremont.com/wp-content/uploads/2018/01/Trivia-Night-Hipster-Lighbuld.jpg");
+background-size: cover;
+}
+h1{
+    color: #ffb84d;
+    font-family: 'Yatra One', cursive;
+    text-shadow: 2px 2px 5px black;
+    
+}
