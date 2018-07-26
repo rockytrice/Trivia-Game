@@ -35,10 +35,11 @@ h2{
     width: 700px;
     height: 480px;
     margin-left: 43px;
-    margin-top: -319px;
+    margin-top: -561px;
     background-color: black;
     opacity: 0.7;
     position: absolute;
+    display: none;
 }
 
 input[type="radio"]{
@@ -56,4 +57,28 @@ input[type="radio"]{
       margin-top: -44px;
       margin-left: 309px;
       color: red;
+  }
+
+  #end-screen{
+height: 300px;
+width: 300px;
+border-style: solid;
+border-color: black;
+margin-left: 900px;
+  }
+
+  h3 {
+      color: red;
+      font-weight: bold;
+  }
+  #start-screen {
+      height: 300px;
+      width:500px;
+      background-color: green;
+  }
+
+
+  .btn:not(:disabled):not(.disabled) {
+      margin-left: 200px;
+      margin-top: 200px;
   }

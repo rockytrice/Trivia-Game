@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-   
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -17,32 +17,35 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-                <div id="display-timer">00:60</div>
+            <div id="display-timer">00:60</div>
 
             <p class="lead"></p>
         </div>
     </div>
 
 
-    <header>
+    
 
-        <div id="start-page">
-                <button type="button" class="btn btn-primary">Start</button>
-            </div>
+        <div id="start-screen">
+            <button type="button" class="btn btn-primary">START</button>
+</div>    
+        <div id="results"></div>
 
-<div id="results"></div>
-
-    </header>
-<!-- this is the container box for the questions and answers -->
-        <!-- where the countdown timer will be displayed -->
-
+    
+    <!-- this is the container box for the questions and answers -->
+    <!-- where the countdown timer will be displayed -->
+    <div id="end-screen">
+        <h3>Correct:</h3>
+        <h3>Incorrect:</h3>
+        <h3>Unanswered:</h3>
+    </div>
 
     <div id="trivia-box">
 
 
         <form id="quiz">
 
-<!-- trivia questions -->
+            <!-- trivia questions -->
             <P>1. What is the name of Han Solo's ship?
                 <BR>
                 <input type="radio" name="Question1" value="incorrect">Soulless One
@@ -67,7 +70,7 @@
 
             </p>
 
-             <P>3. Who is luke and leia's mother?
+            <P>3. Who is luke and leia's mother?
                 <BR>
                 <input type="radio" name="Question3" value="incorrect">Sabe
 
@@ -113,14 +116,14 @@
                 <input type="radio" name="Question6" value="incorrect">Dengar
 
                 <input type="radio" name="Question6?" value="incorrect">Asajj Ventress
+            
+            <br>
+            <br>
 
-                <br>
-                <br> 
-
-<!-- submit button for the quiz -->
-<button type="button" class="btn btn-danger">Done</button>     
-
-</form>
+            <!-- submit button for the quiz -->
+            <button type="submit" class="btn btn-danger" id="submition">Done</button>
+            </P>
+        </form>
 
 
     </div>
@@ -129,7 +132,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
