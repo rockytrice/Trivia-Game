@@ -38,8 +38,8 @@ $(document).ready(function () {
     
 
     $("#start-btn").on("click", function(){
-        $("#trivia-quiz").show();
-        $("#start-game").hide();
+        $("#trivia-box").show();
+        $("#start-screen").hide();
         console.log("clicked");
     })
 
@@ -60,6 +60,7 @@ console.log("answer1 " + answer1);
         if ("correct" === answer1) {
             console.log("you are correct");
             correct++;
+            $("#correct-answer").text(correct);
         }else {
             
         }
