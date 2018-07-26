@@ -1,9 +1,10 @@
 // global variables
 // variables for correct and wrong answers
-var correct = 0;
-var incorrect = 0;
+
+
 // testing purposes
 console.log("hello");
+
 // variable that holds the initial starting point for the timer
 var count = 60;
 // clock counts 
@@ -24,11 +25,24 @@ function timer() {
 
 }
 
-
+var correct = 0;
+$("#correct-answer").text(correct);
+var incorrect = 0;
+$("#incorrect-answer").text(incorrect);
+var unanswered = $("#unanswered").text(unanswered);
 
 $(document).ready(function () {
 
-    //  does not seem to be working 
+
+
+    
+
+    $("#start-btn").on("click", function(){
+        $("#trivia-quiz").show();
+        $("#start-game").hide();
+        console.log("clicked");
+    })
+
     // this is the onlick fuction
     // for the form
     $("#submition").on("click", function (event) {
@@ -46,6 +60,8 @@ console.log("answer1 " + answer1);
         if ("correct" === answer1) {
             console.log("you are correct");
             correct++;
+        }else {
+            
         }
         if ("correct" === answer2) {
             console.log("you are correct");
@@ -69,12 +85,8 @@ console.log("answer1 " + answer1);
         }
 
 
-
+        
 
     });
 });
 // on click of start button this should start the quiz
-$("#start-game").on("click", function(){
-    $("#trivia-quiz").show();
-    $("#start-game").hide();
-})

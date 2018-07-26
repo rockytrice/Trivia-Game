@@ -75,10 +75,11 @@ margin-left: 900px;
       height: 300px;
       width:500px;
       background-color: green;
+      margin-left: 339px;
   }
 
 
   .btn:not(:disabled):not(.disabled) {
-      margin-left: 200px;
-      margin-top: 200px;
+      margin-left: -45px;
+      margin-top: 0px;
   }
