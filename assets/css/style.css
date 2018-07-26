@@ -1,15 +1,50 @@
 .jumbotron {
-    background-color: transparent;
-    height: 400px;
-    text-align: center;
+background-color: transparent;
+height: 400px;
+    background-size: cover;
+
+
 }
-body{
-    background-image: url("https://fremont.com/wp-content/uploads/2018/01/Trivia-Night-Hipster-Lighbuld.jpg");
-background-size: cover;
+ body{
+    background-image: url("https://www.twilio.com/blog/wp-content/uploads/2015/12/trivia-awakens-1024x512.png");
+background-size: cover; 
 }
 h1{
     color: #ffb84d;
     font-family: 'Yatra One', cursive;
     text-shadow: 2px 2px 5px black;
+
     
 }
+h2{
+    color: #ffb84d;
+    font-family: 'Yatra One', cursive;
+    text-shadow: 2px 2px 5px black;
+    
+    
+}
+.display-4 {
+    font-size: 100px;
+    font-weight: bolder;
+
+}
+
+#trivia-box {
+    width: 700px;
+    height: 450px;
+    margin-left: 43px;
+    margin-top: -318px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+}
+
+input[type="radio"]{
+    margin: 0 10px 0 10px;
+    
+  }
+  p{
+      text-align: center;
+      color: white;
+      font-size: 18px;
+  }

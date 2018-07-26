@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia game</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-    
+
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Welcome To:</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1 class="display-4"></h1>
+            
+            <p class="lead"></p>
         </div>
-      </div>
+    </div>
 
 
+    <button id="start">Start</button>
 
+    <div id="trivia-box">
+        <div id="timer"></div>
+        <form>
+
+
+            <P>1. What is the name of Han Solo's ship?
+                <BR>
+                <input type="radio" name="1.What is the name of Han Solo's ship??" value="incorrect">Soulless One
+
+                <input type="radio" name="1.What is the name of Han Solo's ship??" value="incorrect">V-wing Fighter
+
+                <input type="radio" name="1.What is the name of Han Solo's ship??" value="correct">Millennium Falcon
+
+                <input type="radio" name="1.What is the name of Han Solo's ship??" value="incorrect">Tantive IV
+
+            </p>
+
+            <P>2. What planet is home to Chewbacca and the Wookiees?
+                <BR>
+                <input type="radio" name="2. What planet is home to Chewbacca and the Wookiees?" value="correct">Kashyyk
+
+                <input type="radio" name="2. What planet is home to Chewbacca and the Wookiees?" value="incorrect">Hoth
+
+                <input type="radio" name="2. What planet is home to Chewbacca and the Wookiees?" value="incorrect">Tatooine
+
+                <input type="radio" name="2. What planet is home to Chewbacca and the Wookiees?" value="incorrect">Naboo
+
+            </p>
+
+            <P>3. Who is luke and leia's mother?
+                <BR>
+                <input type="radio" name="3. Who is luke and leia's mother?" value="incorrect">Sabe
+
+                <input type="radio" name="3. Who is luke and leia's mother?" value="incorrect">Jyn Erso
+
+                <input type="radio" name="3. Who is luke and leia's mother?" value="incorrect">Mon Mothma
+
+                <input type="radio" name="3. Who is luke and leia's mother?" value="correct">Padme'Amidala
+
+            </p>
+
+
+            <P>4. What is Yoda's last name?
+                <BR>
+                <input type="radio" name="1.What is Yoda's last name?" value="incorrect">solo
+
+                <input type="radio" name="1.What is Yoda's last name?" value="incorrect">skywalker
+
+                <input type="radio" name="1.What is Yoda's last name?" value="correct">He doesn't have one
+
+                <input type="radio" name="1.What is Yoda's last name?" value="incorrect">kenobi
+
+            </p>
+
+            <P>5. The geonosians planned to make which secret weapon?
+                <BR>
+                <input type="radio" name="2. The word which means fish is" value="incorrect">The Galaxy Gun
+
+                <input type="radio" name="2. The word which means fish is" value="correct">The Death Star
+
+                <input type="radio" name="2. The word which means fish is" value="incorrect">Planet Killer
+
+                <input type="radio" name="2. The word which means fish is" value="incorrect">Sky cannon
+
+            </p>
+
+            <P>6. What bounty hunter captures Han Solo?
+                <BR>
+                <input type="radio" name="3. What bounty hunter captures Han Solo?" value="incorrect">Bossk
+
+                <input type="radio" name="3. What bounty hunter captures Han Solo?" value="correct">Boba Fett
+
+                <input type="radio" name="3. What bounty hunter captures Han Solo?" value="incorrect">Dengar
+
+                <input type="radio" name="3. What bounty hunter captures Han Solo?" value="incorrect">Asajj Ventress
+
+          
+
+        </form>
+
+    </div>
 
 
 
 
 </body>
+
 </html>
