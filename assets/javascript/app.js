@@ -35,9 +35,9 @@ $(document).ready(function () {
 
 
 
-    
 
-    $("#start-btn").on("click", function(){
+
+    $("#start-btn").on("click", function () {
         $("#trivia-box").show();
         $("#start-screen").hide();
         console.log("clicked");
@@ -55,38 +55,71 @@ $(document).ready(function () {
         var answer5 = $("input[name=Question5]:checked").val();
         var answer6 = $("input[name=Question6]:checked").val();
 
-console.log("answer1 " + answer1);
+
         // checking if answers are correct/or incorrect
         if ("correct" === answer1) {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        }else {
-            
+        } else if("incorrect" !== answer1) {
+            console.log("You are incorrect");
+            incorrect++;
+            $("incorrect-answer").text(incorrect);
+
         }
         if ("correct" === answer2) {
             console.log("you are correct");
             correct++;
-        }
-        if ("correct" === answer2) {
-            console.log("you are correct");
-            correct++;
+            $("#correct-answer").text(correct);
+        } else {
+            console.log("You are incorrect");
+            incorrect++;
+            $("incorrect-answer").text(incorrect);
+
         }
         if ("correct" === answer3) {
             console.log("you are correct");
             correct++;
+            $("#correct-answer").text(correct);
+        } else {
+            console.log("You are incorrect");
+            incorrect++;
+            $("incorrect-answer").text(incorrect);
+
         }
         if ("correct" === answer4) {
             console.log("you are correct");
             correct++;
+            $("#correct-answer").text(correct);
+        } else {
+            console.log("You are incorrect");
+            incorrect++;
+            $("incorrect-answer").text(incorrect);
+
         }
         if ("correct" === answer5) {
             console.log("you are correct");
             correct++;
+            $("#correct-answer").text(correct);
+        } else {
+            console.log("You are incorrect");
+            incorrect++;
+            $("incorrect-answer").text(incorrect);
+
+        }
+        if ("correct" === answer6) {
+            console.log("you are correct");
+            correct++;
+            $("#correct-answer").text(correct);
+        } else {
+            console.log("You are incorrect");
+            incorrect++;
+            $("incorrect-answer").text(incorrect);
+
         }
 
 
-        
+
 
     });
 });
