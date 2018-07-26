@@ -29,7 +29,8 @@ var correct = 0;
 $("#correct-answer").text(correct);
 var incorrect = 0;
 $("#incorrect-answer").text(incorrect);
-var unanswered = $("#unanswered").text(unanswered);
+var unanswered = 0;
+$("#unanswered-answer").text(unanswered);
 
 $(document).ready(function () {
 
@@ -41,12 +42,15 @@ $(document).ready(function () {
         $("#trivia-box").show();
         $("#start-screen").hide();
         console.log("clicked");
+        timer();
     })
 
     // this is the onlick fuction
     // for the form
     $("#submition").on("click", function (event) {
         event.preventDefault();
+        $("#trivia-box").hide();
+        $("#end-screen").show();
         console.log("this button has been click");
         var answer1 = $("input[name=Question1]:checked").val();
         var answer2 = $("input[name=Question2]:checked").val();
