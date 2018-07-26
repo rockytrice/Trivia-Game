@@ -1,13 +1,15 @@
 .jumbotron {
 background-color: transparent;
 height: 400px;
-    background-size: cover;
+
+
 
 
 }
  body{
     background-image: url("https://www.twilio.com/blog/wp-content/uploads/2015/12/trivia-awakens-1024x512.png");
 background-size: cover; 
+background-repeat: no-repeat;
 }
 h1{
     color: #ffb84d;
@@ -31,9 +33,9 @@ h2{
 
 #trivia-box {
     width: 700px;
-    height: 450px;
+    height: 480px;
     margin-left: 43px;
-    margin-top: -318px;
+    margin-top: -319px;
     background-color: black;
     opacity: 0.7;
     position: absolute;
@@ -47,4 +49,11 @@ input[type="radio"]{
       text-align: center;
       color: white;
       font-size: 18px;
+  }
+  #display-timer{
+      font-size: 30px;
+      color: white;
+      margin-top: -44px;
+      margin-left: 309px;
+      color: red;
   }

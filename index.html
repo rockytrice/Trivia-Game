@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+   
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -16,100 +17,119 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4"></h1>
-            
+                <div id="display-timer">00:60</div>
+
             <p class="lead"></p>
         </div>
     </div>
 
 
-    <button id="start">Start</button>
+    <header>
+
+        <div id="start-page">
+                <button type="button" class="btn btn-primary">Start</button>
+            </div>
+
+<div id="results"></div>
+
+    </header>
+<!-- this is the container box for the questions and answers -->
+        <!-- where the countdown timer will be displayed -->
+
 
     <div id="trivia-box">
-        <div id="timer"></div>
-        <form>
 
 
+        <form id="quiz">
+
+<!-- trivia questions -->
             <P>1. What is the name of Han Solo's ship?
                 <BR>
-                <input type="radio" name="1.What is the name of Han Solo's ship??" value="incorrect">Soulless One
+                <input type="radio" name="Question1" value="incorrect">Soulless One
 
-                <input type="radio" name="1.What is the name of Han Solo's ship??" value="incorrect">V-wing Fighter
+                <input type="radio" name="Question1" value="incorrect">V-wing Fighter
 
-                <input type="radio" name="1.What is the name of Han Solo's ship??" value="correct">Millennium Falcon
+                <input type="radio" name="Question1" value="correct">Millennium Falcon
 
-                <input type="radio" name="1.What is the name of Han Solo's ship??" value="incorrect">Tantive IV
+                <input type="radio" name="Question1" value="incorrect">Tantive IV
 
             </p>
 
             <P>2. What planet is home to Chewbacca and the Wookiees?
                 <BR>
-                <input type="radio" name="2. What planet is home to Chewbacca and the Wookiees?" value="correct">Kashyyk
+                <input type="radio" name="Question2" value="correct">Kashyyk
 
-                <input type="radio" name="2. What planet is home to Chewbacca and the Wookiees?" value="incorrect">Hoth
+                <input type="radio" name="Question2?" value="incorrect">Hoth
 
-                <input type="radio" name="2. What planet is home to Chewbacca and the Wookiees?" value="incorrect">Tatooine
+                <input type="radio" name="Question2" value="incorrect">Tatooine
 
-                <input type="radio" name="2. What planet is home to Chewbacca and the Wookiees?" value="incorrect">Naboo
+                <input type="radio" name="Question2" value="incorrect">Naboo
 
             </p>
 
-            <P>3. Who is luke and leia's mother?
+             <P>3. Who is luke and leia's mother?
                 <BR>
-                <input type="radio" name="3. Who is luke and leia's mother?" value="incorrect">Sabe
+                <input type="radio" name="Question3" value="incorrect">Sabe
 
-                <input type="radio" name="3. Who is luke and leia's mother?" value="incorrect">Jyn Erso
+                <input type="radio" name="Question3" value="incorrect">Jyn Erso
 
-                <input type="radio" name="3. Who is luke and leia's mother?" value="incorrect">Mon Mothma
+                <input type="radio" name="Question3" value="incorrect">Mon Mothma
 
-                <input type="radio" name="3. Who is luke and leia's mother?" value="correct">Padme'Amidala
+                <input type="radio" name="Question3" value="correct">Padme'Amidala
 
             </p>
 
 
             <P>4. What is Yoda's last name?
                 <BR>
-                <input type="radio" name="1.What is Yoda's last name?" value="incorrect">solo
+                <input type="radio" name="Question4" value="incorrect">solo
 
-                <input type="radio" name="1.What is Yoda's last name?" value="incorrect">skywalker
+                <input type="radio" name="Question4" value="incorrect">skywalker
 
-                <input type="radio" name="1.What is Yoda's last name?" value="correct">He doesn't have one
+                <input type="radio" name="Question4" value="correct">He doesn't have one
 
-                <input type="radio" name="1.What is Yoda's last name?" value="incorrect">kenobi
+                <input type="radio" name="Question4" value="incorrect">kenobi
 
             </p>
 
             <P>5. The geonosians planned to make which secret weapon?
                 <BR>
-                <input type="radio" name="2. The word which means fish is" value="incorrect">The Galaxy Gun
+                <input type="radio" name="Question5" value="incorrect">The Galaxy Gun
 
-                <input type="radio" name="2. The word which means fish is" value="correct">The Death Star
+                <input type="radio" name="Question5" value="correct">The Death Star
 
-                <input type="radio" name="2. The word which means fish is" value="incorrect">Planet Killer
+                <input type="radio" name="Question5" value="incorrect">Planet Killer
 
-                <input type="radio" name="2. The word which means fish is" value="incorrect">Sky cannon
+                <input type="radio" name="Question5" value="incorrect">Sky cannon
 
             </p>
 
             <P>6. What bounty hunter captures Han Solo?
                 <BR>
-                <input type="radio" name="3. What bounty hunter captures Han Solo?" value="incorrect">Bossk
+                <input type="radio" name="Question6" value="incorrect">Bossk
 
-                <input type="radio" name="3. What bounty hunter captures Han Solo?" value="correct">Boba Fett
+                <input type="radio" name="Question6" value="correct">Boba Fett
 
-                <input type="radio" name="3. What bounty hunter captures Han Solo?" value="incorrect">Dengar
+                <input type="radio" name="Question6" value="incorrect">Dengar
 
-                <input type="radio" name="3. What bounty hunter captures Han Solo?" value="incorrect">Asajj Ventress
+                <input type="radio" name="Question6?" value="incorrect">Asajj Ventress
 
-          
+                <br>
+                <br> 
 
-        </form>
+<!-- submit button for the quiz -->
+<button type="button" class="btn btn-danger">Done</button>     
+
+</form>
+
 
     </div>
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
