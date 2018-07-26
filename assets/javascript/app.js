@@ -61,10 +61,10 @@ $(document).ready(function () {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        } else if("incorrect" !== answer1) {
+        } else {
             console.log("You are incorrect");
             incorrect++;
-            $("incorrect-answer").text(incorrect);
+            $("#incorrect-answer").text(incorrect);
 
         }
         if ("correct" === answer2) {
@@ -74,7 +74,7 @@ $(document).ready(function () {
         } else {
             console.log("You are incorrect");
             incorrect++;
-            $("incorrect-answer").text(incorrect);
+            $("#incorrect-answer").text(incorrect);
 
         }
         if ("correct" === answer3) {
@@ -84,7 +84,7 @@ $(document).ready(function () {
         } else {
             console.log("You are incorrect");
             incorrect++;
-            $("incorrect-answer").text(incorrect);
+            $("#incorrect-answer").text(incorrect);
 
         }
         if ("correct" === answer4) {
@@ -94,7 +94,7 @@ $(document).ready(function () {
         } else {
             console.log("You are incorrect");
             incorrect++;
-            $("incorrect-answer").text(incorrect);
+            $("#incorrect-answer").text(incorrect);
 
         }
         if ("correct" === answer5) {
@@ -104,7 +104,7 @@ $(document).ready(function () {
         } else {
             console.log("You are incorrect");
             incorrect++;
-            $("incorrect-answer").text(incorrect);
+            $("#incorrect-answer").text(incorrect);
 
         }
         if ("correct" === answer6) {
@@ -114,7 +114,7 @@ $(document).ready(function () {
         } else {
             console.log("You are incorrect");
             incorrect++;
-            $("incorrect-answer").text(incorrect);
+            $("#incorrect-answer").text(incorrect);
 
         }
 
