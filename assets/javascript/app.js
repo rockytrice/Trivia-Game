@@ -24,13 +24,15 @@ function timer() {
         $("#end-screen").show();
         $("#display-timer").hide();
 
+
+
     }
 
 
 
 
 }
-// variables for correct and wrong answers
+// variables for correct, incorrect, and unanswered questions
 
 var correct = 0;
 $("#correct-answer").text(correct);
@@ -44,8 +46,9 @@ $(document).ready(function () {
     var audioElement = document.createElement("audio");
     audioElement.setAttribute("src", "assets/star-wars-theme-song.mp3");
 
-    var audioElement2 = document.createElement("audio2");
-    audioElement2.setAttribute("src", "assets/taught.mp3");
+    var darthVadar = document.createElement("audio");
+    darthVadar.setAttribute("src", "assets/master.mp3");
+
 
     // start button function which starts the quiz
     $("#start-btn").on("click", function () {
@@ -64,12 +67,13 @@ $(document).ready(function () {
     // for the form
     $("#submition").on("click", function (event) {
         event.preventDefault();
+        // shows snd hides the triva questions and end screen
         $("#trivia-box").hide();
         $("#end-screen").show();
         $("#display-timer").hide();
-
         // pause the theme music when the submit button is pressed
         audioElement.pause();
+        darthVadar();
 
         // test log/ working now... takes the check value and checks it against the if statements
         console.log("this button has been click");
@@ -106,8 +110,8 @@ $(document).ready(function () {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-            // checks if incorrect and logs to the console as well as writes to the html
 
+            // checks if incorrect and logs to the console as well as writes to the html
         } else if ("incorrect" === answer2) {
 
             console.log("You are incorrect");
@@ -166,6 +170,7 @@ $(document).ready(function () {
             correct++;
             $("#correct-answer").text(correct);
 
+            // checks if incorrect and logs to the console as well as writes to the html
         } else if ("incorrect" === answer5) {
             console.log("You are incorrect");
             incorrect++;
@@ -183,6 +188,7 @@ $(document).ready(function () {
             correct++;
             $("#correct-answer").text(correct);
 
+            // checks if incorrect and logs to the console as well as writes to the html
         } else if ("incorrect" === answer6) {
             console.log("You are incorrect");
             incorrect++;
