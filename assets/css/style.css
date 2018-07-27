@@ -57,6 +57,7 @@ input[type="radio"]{
       margin-top: -44px;
       margin-left: 309px;
       color: red;
+      display: none;
   }
 
   #end-screen{

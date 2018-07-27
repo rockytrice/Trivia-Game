@@ -19,6 +19,8 @@ function timer() {
     count--;
     if (count === 0) {
         clearInterval(counter);
+        $("#trivia-box").hide();
+        $("#end-screen").show();
 
     }
 
