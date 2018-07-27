@@ -19,10 +19,102 @@ function timer() {
     count--;
     if (count === 0) {
         clearInterval(counter);
+        // when the timer reaches zero the trivia box will dissapear along with the timer but the end screen will appear
         $("#trivia-box").hide();
         $("#end-screen").show();
+        $("#display-timer").hide();
 
     }
+    if ("correct" === answer1) {
+        console.log("you are correct");
+        correct++;
+        $("#correct-answer").text(correct);
+
+    } else if ("incorrect" === answer1) {
+        console.log("You are incorrect");
+        incorrect++;
+        $("#incorrect-answer").text(incorrect);
+    }
+    // if question is left unchecked the variable and placemaker and the end page will add one to  unanswered talley
+    else if (undefined === answer1) {
+        unanswered++;
+        $("#unanswered-answer").text(unanswered);
+        console.log("unanswered");
+    }
+
+    if ("correct" === answer2) {
+        console.log("you are correct");
+        correct++;
+        $("#correct-answer").text(correct);
+    } else if ("incorrect" === answer2) {
+        console.log("You are incorrect");
+        incorrect++;
+        $("#incorrect-answer").text(incorrect);
+
+    } else if (undefined === answer2) {
+        unanswered++;
+        $("#unanswered-answer").text(unanswered);
+        console.log("unanswered");
+    }
+
+    if ("correct" === answer3) {
+        console.log("you are correct");
+        correct++;
+        $("#correct-answer").text(correct);
+    } else if ("incorrect" === answer3) {
+        console.log("You are incorrect");
+        incorrect++;
+        $("#incorrect-answer").text(incorrect);
+
+    } else if (undefined === answer3) {
+        unanswered++;
+        $("#unanswered-answer").text(unanswered);
+        console.log("unanswered");
+    }
+
+    if ("correct" === answer4) {
+        console.log("you are correct");
+        correct++;
+        $("#correct-answer").text(correct);
+    } else if ("incorrect" === answer4) {
+        console.log("You are incorrect");
+        incorrect++;
+        $("#incorrect-answer").text(incorrect);
+    } else if (undefined === answer4) {
+        unanswered++;
+        $("#unanswered-answer").text(unanswered);
+        console.log("unanswered");
+    }
+
+
+    if ("correct" === answer5) {
+        console.log("you are correct");
+        correct++;
+        $("#correct-answer").text(correct);
+    } else if ("incorrect" === answer5) {
+        console.log("You are incorrect");
+        incorrect++;
+        $("#incorrect-answer").text(incorrect);
+    } else if (undefined === answer5) {
+        unanswered++;
+        $("#unanswered-answer").text(unanswered);
+        console.log("unanswered");
+    }
+
+    if ("correct" === answer6) {
+        console.log("you are correct");
+        correct++;
+        $("#correct-answer").text(correct);
+    } else if ("incorrect" === answer6) {
+        console.log("You are incorrect");
+        incorrect++;
+        $("#incorrect-answer").text(incorrect);
+    } else if (undefined === answer6) {
+        unanswered++;
+        $("#unanswered-answer").text(unanswered);
+        console.log("unanswered");
+    }
+
 
 
 }
@@ -72,13 +164,14 @@ $(document).ready(function () {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        } else if ("incorrect" === answer1){
+
+        } else if ("incorrect" === answer1) {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
         }
         // if question is left unchecked the variable and placemaker and the end page will add one to  unanswered talley
-       else if (undefined === answer1) {
+        else if (undefined === answer1) {
             unanswered++;
             $("#unanswered-answer").text(unanswered);
             console.log("unanswered");
@@ -88,55 +181,73 @@ $(document).ready(function () {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        } else {
+        } else if ("incorrect" === answer2) {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
 
+        } else if (undefined === answer2) {
+            unanswered++;
+            $("#unanswered-answer").text(unanswered);
+            console.log("unanswered");
         }
 
         if ("correct" === answer3) {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        } else {
+        } else if ("incorrect" === answer3) {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
 
+        } else if (undefined === answer3) {
+            unanswered++;
+            $("#unanswered-answer").text(unanswered);
+            console.log("unanswered");
         }
 
         if ("correct" === answer4) {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        } else {
+        } else if ("incorrect" === answer4) {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
-
+        } else if (undefined === answer4) {
+            unanswered++;
+            $("#unanswered-answer").text(unanswered);
+            console.log("unanswered");
         }
+
 
         if ("correct" === answer5) {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        } else {
+        } else if ("incorrect" === answer5) {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
-
+        } else if (undefined === answer5) {
+            unanswered++;
+            $("#unanswered-answer").text(unanswered);
+            console.log("unanswered");
         }
 
         if ("correct" === answer6) {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        } else {
+        } else if ("incorrect" === answer6) {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
-
+        } else if (undefined === answer6) {
+            unanswered++;
+            $("#unanswered-answer").text(unanswered);
+            console.log("unanswered");
         }
 
 
@@ -144,4 +255,3 @@ $(document).ready(function () {
 
     });
 });
-// on click of start button this should start the quiz

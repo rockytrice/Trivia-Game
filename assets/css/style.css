@@ -19,7 +19,7 @@ h1{
     
 }
 h2{
-    color: #ffb84d;
+    color: red;
     font-family: 'Yatra One', cursive;
     text-shadow: 2px 2px 5px black;
     
@@ -49,9 +49,8 @@ input[type="radio"]{
   p{
       text-align: center;
       color: red;
-      font-size: 19px;
+      font-size: 18px;
       font-weight: bold;
-      letter-spacing: 1px;
   }
   #display-timer{
       font-size: 30px;
