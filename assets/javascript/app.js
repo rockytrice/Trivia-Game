@@ -6,7 +6,7 @@
 console.log("hello");
 
 // variable that holds the initial starting point for the timer
-var count = 60;
+var count = 70;
 // clock counts 
 var counter = setInterval(timer, 1000);
 
@@ -42,12 +42,13 @@ var unanswered = 0;
 $("#unanswered-answer").text(unanswered);
 
 $(document).ready(function () {
+
     // star wars theme music for the quiz...
     var audioElement = document.createElement("audio");
     audioElement.setAttribute("src", "assets/star-wars-theme-song.mp3");
 
-    var darthVadar = document.createElement("audio");
-    darthVadar.setAttribute("src", "assets/master.mp3");
+    // var darthVadar = document.createElement("audio");
+    // darthVadar.setAttribute("src", "assets/master.mp3");  not working 
 
 
     // start button function which starts the quiz
@@ -73,7 +74,7 @@ $(document).ready(function () {
         $("#display-timer").hide();
         // pause the theme music when the submit button is pressed
         audioElement.pause();
-        darthVadar();
+        // darthVadar(); not working
 
         // test log/ working now... takes the check value and checks it against the if statements
         console.log("this button has been click");
