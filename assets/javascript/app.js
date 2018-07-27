@@ -43,6 +43,8 @@ $(document).ready(function () {
     $("#start-btn").on("click", function () {
         $("#trivia-box").show();
         $("#start-screen").hide();
+        $("#display-timer").show();
+
         console.log("clicked");
         timer();
     })
@@ -53,6 +55,9 @@ $(document).ready(function () {
         event.preventDefault();
         $("#trivia-box").hide();
         $("#end-screen").show();
+        $("#display-timer").hide();
+
+        // test log
         console.log("this button has been click");
         var answer1 = $("input[name=Question1]:checked").val();
         var answer2 = $("input[name=Question2]:checked").val();
@@ -67,12 +72,18 @@ $(document).ready(function () {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-        } else {
+        } else if ("incorrect" === answer1){
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
-
         }
+        // if question is left unchecked the variable and placemaker and the end page will add one to  unanswered talley
+       else if (undefined === answer1) {
+            unanswered++;
+            $("#unanswered-answer").text(unanswered);
+            console.log("unanswered");
+        }
+
         if ("correct" === answer2) {
             console.log("you are correct");
             correct++;
@@ -83,6 +94,7 @@ $(document).ready(function () {
             $("#incorrect-answer").text(incorrect);
 
         }
+
         if ("correct" === answer3) {
             console.log("you are correct");
             correct++;
@@ -93,6 +105,7 @@ $(document).ready(function () {
             $("#incorrect-answer").text(incorrect);
 
         }
+
         if ("correct" === answer4) {
             console.log("you are correct");
             correct++;
@@ -103,6 +116,7 @@ $(document).ready(function () {
             $("#incorrect-answer").text(incorrect);
 
         }
+
         if ("correct" === answer5) {
             console.log("you are correct");
             correct++;
@@ -113,6 +127,7 @@ $(document).ready(function () {
             $("#incorrect-answer").text(incorrect);
 
         }
+
         if ("correct" === answer6) {
             console.log("you are correct");
             correct++;

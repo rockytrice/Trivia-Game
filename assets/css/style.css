@@ -48,8 +48,10 @@ input[type="radio"]{
   }
   p{
       text-align: center;
-      color: white;
-      font-size: 18px;
+      color: red;
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: 1px;
   }
   #display-timer{
       font-size: 30px;
@@ -63,10 +65,10 @@ input[type="radio"]{
   #end-screen{
 height: 300px;
 width: 300px;
-border-style: solid;
 margin-top: 35px;
-margin-left: 310;
+margin-left: 303;
 display: none;
+font-size: 25px;
 
   }
 
