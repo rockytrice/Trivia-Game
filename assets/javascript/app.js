@@ -23,13 +23,14 @@ function timer() {
         $("#trivia-box").hide();
         $("#end-screen").show();
         $("#display-timer").hide();
-        
+
     }
 
 
 
 
 }
+// variables for correct and wrong answers
 
 var correct = 0;
 $("#correct-answer").text(correct);
@@ -39,9 +40,12 @@ var unanswered = 0;
 $("#unanswered-answer").text(unanswered);
 
 $(document).ready(function () {
-
+    // star wars theme music for the quiz...
     var audioElement = document.createElement("audio");
     audioElement.setAttribute("src", "assets/star-wars-theme-song.mp3");
+
+    var audioElement2 = document.createElement("audio2");
+    audioElement2.setAttribute("src", "assets/taught.mp3");
 
     // start button function which starts the quiz
     $("#start-btn").on("click", function () {
@@ -49,6 +53,7 @@ $(document).ready(function () {
         $("#trivia-box").show();
         $("#start-screen").hide();
         $("#display-timer").show();
+        // when the start button is clicked the music begins to play
         audioElement.play();
         // test log 
         console.log("clicked");
@@ -63,6 +68,9 @@ $(document).ready(function () {
         $("#end-screen").show();
         $("#display-timer").hide();
 
+        // pause the theme music when the submit button is pressed
+        audioElement.pause();
+
         // test log/ working now... takes the check value and checks it against the if statements
         console.log("this button has been click");
         var answer1 = $("input[name=Question1]:checked").val();
@@ -75,9 +83,11 @@ $(document).ready(function () {
 
         // checking if answers are correct/incorrect/ or unchecked
         if ("correct" === answer1) {
+
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
+
             // checks if incorrect and logs to the console as well as writes to the html
         } else if ("incorrect" === answer1) {
             console.log("You are incorrect");
@@ -92,16 +102,19 @@ $(document).ready(function () {
         }
 
         if ("correct" === answer2) {
+
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
             // checks if incorrect and logs to the console as well as writes to the html
 
         } else if ("incorrect" === answer2) {
+
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
 
+            // if question is left unchecked the variable and placemaker and the end page will add one to  unanswered talley
         } else if (undefined === answer2) {
             unanswered++;
             $("#unanswered-answer").text(unanswered);
@@ -109,16 +122,19 @@ $(document).ready(function () {
         }
 
         if ("correct" === answer3) {
+
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
-            // checks if incorrect and logs to the console as well as writes to the html
 
+            // checks if incorrect and logs to the console as well as writes to the html
         } else if ("incorrect" === answer3) {
+
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
 
+            // if question is left unchecked the variable and placemaker and the end page will add one to  unanswered talley
         } else if (undefined === answer3) {
             unanswered++;
             $("#unanswered-answer").text(unanswered);
@@ -135,6 +151,8 @@ $(document).ready(function () {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
+
+            // if question is left unchecked the variable and placemaker and the end page will add one to  unanswered talley
         } else if (undefined === answer4) {
             unanswered++;
             $("#unanswered-answer").text(unanswered);
@@ -143,13 +161,17 @@ $(document).ready(function () {
 
 
         if ("correct" === answer5) {
+
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
+
         } else if ("incorrect" === answer5) {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
+
+            // if question is left unchecked the variable and placemaker and the end page will add one to  unanswered talley
         } else if (undefined === answer5) {
             unanswered++;
             $("#unanswered-answer").text(unanswered);
@@ -160,10 +182,13 @@ $(document).ready(function () {
             console.log("you are correct");
             correct++;
             $("#correct-answer").text(correct);
+
         } else if ("incorrect" === answer6) {
             console.log("You are incorrect");
             incorrect++;
             $("#incorrect-answer").text(incorrect);
+
+            // if question is left unchecked the variable and placemaker and the end page will add one to  unanswered talley
         } else if (undefined === answer6) {
             unanswered++;
             $("#unanswered-answer").text(unanswered);
